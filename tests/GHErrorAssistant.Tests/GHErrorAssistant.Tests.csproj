@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net8.0</TargetFramework><IsTestProject>true</IsTestProject><IsPackable>false</IsPackable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/GHErrorAssistant/UiLayoutPolicy.cs" Link="UiLayoutPolicy.cs" />
+    <Compile Include="../../src/GHErrorAssistant/ParameterTypeMetadata.cs" Link="ParameterTypeMetadata.cs" />
+    <Compile Include="../../src/GHErrorAssistant/DataEvidence.cs" Link="DataEvidence.cs" />
+    <Compile Include="../../src/GHErrorAssistant/GraphIntelligence.cs" Link="GraphIntelligence.cs" />
+    <Compile Include="../../src/GHErrorAssistant/CurrentPresentation.cs" Link="CurrentPresentation.cs" />
+    <Compile Include="../../src/GHErrorAssistant/CompactDiagnosis.cs" Link="CompactDiagnosis.cs" />
+    <Compile Include="../../src/GHErrorAssistant/InspectionSampling.cs" Link="InspectionSampling.cs" />
+    <Compile Include="../../src/GHErrorAssistant/AssistantLifecycle.cs" Link="AssistantLifecycle.cs" />
+    <Compile Include="../../src/GHErrorAssistant/ReportLayoutLifetime.cs" Link="ReportLayoutLifetime.cs" />
+    <Compile Include="../../src/GHErrorAssistant/SolutionRefreshGate.cs" Link="SolutionRefreshGate.cs" />
+    <Compile Include="../../src/GHErrorAssistant/CurrentDiagnosis.cs" Link="CurrentDiagnosis.cs" />
+    <None Update="Fixtures/*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Fixtures/*.tsv" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="../../src/GHErrorAssistant/TroubleshootingSession.cs" Link="TroubleshootingSession.cs" />
+    <Compile Include="../../src/GHErrorAssistant/GuidedTroubleshooting.cs" Link="GuidedTroubleshooting.cs" />
+    <Compile Include="../../src/GHErrorAssistant/RepairVerification.cs" Link="RepairVerification.cs" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" PrivateAssets="all" />
+    <Compile Include="../../src/GHErrorAssistant/ExplanationEngine.cs" Link="ExplanationEngine.cs" />
+    <Compile Include="../../src/GHErrorAssistant/TutorExplanation.cs" Link="TutorExplanation.cs" />
+    <Compile Include="../../src/GHErrorAssistant/ReportPresentation.cs" Link="ReportPresentation.cs" />
+    <Compile Include="../../src/GHErrorAssistant/DependencyAnalysis.cs" Link="DependencyAnalysis.cs" />
+    <Compile Include="../../src/GHErrorAssistant/BeginnerDiagnosis.cs" Link="BeginnerDiagnosis.cs" />
+    <Compile Include="../../src/GHErrorAssistant/LocateNavigation.cs" Link="LocateNavigation.cs" />
+    <Compile Include="../../src/GHErrorAssistant/LocatePolicy.cs" Link="LocatePolicy.cs" />
+    <Compile Include="../../src/GHErrorAssistant/DiagnosticModel.cs" Link="DiagnosticModel.cs" />
+    <Compile Include="../../src/GHErrorAssistant/DiagnosticSynthesis.cs" Link="DiagnosticSynthesis.cs" />
+  </ItemGroup>
+</Project>
+
+
+

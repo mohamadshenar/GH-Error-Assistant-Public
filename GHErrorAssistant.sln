@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8781B01B-D142-4556-ABB9-224817666062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHErrorAssistant", "src\GHErrorAssistant\GHErrorAssistant.csproj", "{47620F01-57C4-4805-A5DD-4DFDD707AC34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D4BEEF58-FC37-4486-A8F7-515EAF02F90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHErrorAssistant.Tests", "tests\GHErrorAssistant.Tests\GHErrorAssistant.Tests.csproj", "{447AF9F3-D1CE-4990-80FB-614929A5C015}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47620F01-57C4-4805-A5DD-4DFDD707AC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47620F01-57C4-4805-A5DD-4DFDD707AC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47620F01-57C4-4805-A5DD-4DFDD707AC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47620F01-57C4-4805-A5DD-4DFDD707AC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447AF9F3-D1CE-4990-80FB-614929A5C015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447AF9F3-D1CE-4990-80FB-614929A5C015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447AF9F3-D1CE-4990-80FB-614929A5C015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447AF9F3-D1CE-4990-80FB-614929A5C015}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{47620F01-57C4-4805-A5DD-4DFDD707AC34} = {8781B01B-D142-4556-ABB9-224817666062}
+		{447AF9F3-D1CE-4990-80FB-614929A5C015} = {D4BEEF58-FC37-4486-A8F7-515EAF02F90B}
+	EndGlobalSection
+EndGlobal

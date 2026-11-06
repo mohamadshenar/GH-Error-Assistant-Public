@@ -1,0 +1,3372 @@
+{
+  "provenance": "Sanitized scalar regression replay; synthetic identities, no geometry or original document identifiers.",
+  "rootId": "00000000-0000-4000-8000-00000000007b",
+  "curveId": "00000000-0000-4000-8000-00000000004e",
+  "objects": [
+    {
+      "id": "00000000-0000-4000-8000-00000000007b",
+      "selected": false,
+      "type": "CurveComponents.Component_Curve",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000000e",
+              "owner": "00000000-0000-4000-8000-000000000083",
+              "count": 500,
+              "type": "Generic Data",
+              "name": "Chunks"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000024",
+          "persistentCount": 0,
+          "nickname": "Vertices",
+          "count": 500,
+          "name": "Vertices",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Integer"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000003b",
+          "persistentCount": 1,
+          "nickname": "Degree",
+          "count": 1,
+          "name": "Degree",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Integer",
+              "valid": true
+            }
+          ],
+          "type": "Integer",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Boolean"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000067",
+          "persistentCount": 1,
+          "nickname": "Periodic",
+          "count": 1,
+          "name": "Periodic",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Boolean",
+              "valid": true
+            }
+          ],
+          "type": "Boolean",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000005e",
+          "persistentCount": 0,
+          "nickname": "Curve",
+          "count": 20,
+          "name": "Curve",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Curve",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000008",
+          "persistentCount": 0,
+          "nickname": "Length",
+          "count": 20,
+          "name": "Length",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000006a",
+          "persistentCount": 0,
+          "nickname": "Domain",
+          "count": 20,
+          "name": "Domain",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        }
+      ],
+      "nickname": "Nurbs Curve",
+      "messages": [
+        {
+          "severity": "Error",
+          "message": "Insufficient vertices for a curve"
+        }
+      ],
+      "name": "Nurbs Curve"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000083",
+      "selected": false,
+      "type": "MathComponents.ArrayComponents.Component_PartitionList",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000004b",
+              "owner": "00000000-0000-4000-8000-000000000079",
+              "count": 500,
+              "type": "Geometry",
+              "name": "Geometry"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000088",
+          "persistentCount": 0,
+          "nickname": "List",
+          "count": 500,
+          "name": "List",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Generic Data",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Integer"
+            },
+            {
+              "null": false,
+              "type": "Integer"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000016",
+              "owner": "00000000-0000-4000-8000-00000000004c",
+              "count": 1,
+              "type": "Generic Data",
+              "name": "Result"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000068",
+          "persistentCount": 2,
+          "nickname": "Size",
+          "count": 1,
+          "name": "Size",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Integer",
+              "valid": true
+            }
+          ],
+          "type": "Integer",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000000e",
+          "persistentCount": 0,
+          "nickname": "Chunks",
+          "count": 500,
+          "name": "Chunks",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Generic Data",
+          "messages": []
+        }
+      ],
+      "nickname": "Partition List",
+      "messages": [],
+      "name": "Partition List"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000079",
+      "selected": false,
+      "type": "LinearXForms.Component_Move",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000076",
+              "owner": "00000000-0000-4000-8000-000000000027",
+              "count": 500,
+              "type": "Point",
+              "name": "Points"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000046",
+          "persistentCount": 0,
+          "nickname": "Geometry",
+          "count": 500,
+          "name": "Geometry",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": true,
+          "sample": [
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            }
+          ],
+          "type": "Geometry",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Vector"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000039",
+              "owner": "00000000-0000-4000-8000-000000000037",
+              "count": 500,
+              "type": "Vector",
+              "name": "Unit vector"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000004d",
+          "persistentCount": 1,
+          "nickname": "Motion",
+          "count": 500,
+          "name": "Motion",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000004b",
+          "persistentCount": 0,
+          "nickname": "Geometry",
+          "count": 500,
+          "name": "Geometry",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Geometry",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000051",
+          "persistentCount": 0,
+          "nickname": "Transform",
+          "count": 500,
+          "name": "Transform",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Transform",
+          "messages": []
+        }
+      ],
+      "nickname": "Move",
+      "messages": [],
+      "name": "Move"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000004c",
+      "selected": false,
+      "type": "MathComponents.OperatorComponents.Component_VariableAddition",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000006d",
+              "owner": "00000000-0000-4000-8000-00000000006d",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000077",
+          "persistentCount": 0,
+          "nickname": "A",
+          "count": 1,
+          "name": "A",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": true,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Generic Data",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000061",
+              "owner": "00000000-0000-4000-8000-000000000061",
+              "count": 1,
+              "type": "Text",
+              "name": "Panel"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000000f",
+          "persistentCount": 0,
+          "nickname": "B",
+          "count": 1,
+          "name": "B",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": true,
+          "sample": [
+            {
+              "null": false,
+              "type": "Text",
+              "valid": true
+            }
+          ],
+          "type": "Generic Data",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000016",
+          "persistentCount": 0,
+          "nickname": "Result",
+          "count": 1,
+          "name": "Result",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Integer",
+              "valid": true
+            }
+          ],
+          "type": "Generic Data",
+          "messages": []
+        }
+      ],
+      "nickname": "Addition",
+      "messages": [],
+      "name": "Addition"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000027",
+      "selected": false,
+      "type": "VectorComponents.DivisionComponents.Component_DivideCurve",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000009",
+              "owner": "00000000-0000-4000-8000-000000000058",
+              "count": 20,
+              "type": "Geometry",
+              "name": "Geometry"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000000b",
+          "persistentCount": 0,
+          "nickname": "Curve",
+          "count": 20,
+          "name": "Curve",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Curve",
+              "valid": true
+            }
+          ],
+          "type": "Curve",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Integer"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000006d",
+              "owner": "00000000-0000-4000-8000-00000000006d",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000029",
+          "persistentCount": 1,
+          "nickname": "Count",
+          "count": 1,
+          "name": "Count",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Integer",
+              "valid": true
+            }
+          ],
+          "type": "Integer",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Boolean"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000072",
+          "persistentCount": 1,
+          "nickname": "Kinks",
+          "count": 1,
+          "name": "Kinks",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Boolean",
+              "valid": true
+            }
+          ],
+          "type": "Boolean",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000076",
+          "persistentCount": 0,
+          "nickname": "Points",
+          "count": 500,
+          "name": "Points",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000006b",
+          "persistentCount": 0,
+          "nickname": "Tangents",
+          "count": 500,
+          "name": "Tangents",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000014",
+          "persistentCount": 0,
+          "nickname": "Parameters",
+          "count": 500,
+          "name": "Parameters",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Divide Curve",
+      "messages": [],
+      "name": "Divide Curve"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000037",
+      "selected": false,
+      "type": "VectorComponents.VectorComponents.Component_UnitVectorZ",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000006e",
+              "owner": "00000000-0000-4000-8000-000000000052",
+              "count": 500,
+              "type": "Number",
+              "name": "Mapped"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000004a",
+          "persistentCount": 1,
+          "nickname": "Factor",
+          "count": 500,
+          "name": "Factor",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000039",
+          "persistentCount": 0,
+          "nickname": "Unit vector",
+          "count": 500,
+          "name": "Unit vector",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        }
+      ],
+      "nickname": "Unit Z",
+      "messages": [],
+      "name": "Unit Z"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000006d",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000006d",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000061",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_Panel",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000061",
+          "nickname": "",
+          "count": 1,
+          "name": "Panel",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Text",
+              "valid": true
+            }
+          ],
+          "type": "Text",
+          "messages": []
+        }
+      ],
+      "nickname": "",
+      "messages": [],
+      "name": "Panel"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000058",
+      "selected": false,
+      "type": "LinearXForms.Component_Move",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000062",
+              "owner": "00000000-0000-4000-8000-000000000073",
+              "count": 1,
+              "type": "Line",
+              "name": "Line"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000026",
+          "persistentCount": 0,
+          "nickname": "Geometry",
+          "count": 1,
+          "name": "Geometry",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": true,
+          "sample": [
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            }
+          ],
+          "type": "Geometry",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Vector"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000005b",
+              "owner": "00000000-0000-4000-8000-000000000045",
+              "count": 20,
+              "type": "Vector",
+              "name": "Unit vector"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000005f",
+          "persistentCount": 1,
+          "nickname": "Motion",
+          "count": 20,
+          "name": "Motion",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000009",
+          "persistentCount": 0,
+          "nickname": "Geometry",
+          "count": 20,
+          "name": "Geometry",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            }
+          ],
+          "type": "Geometry",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000081",
+          "persistentCount": 0,
+          "nickname": "Transform",
+          "count": 20,
+          "name": "Transform",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Transform",
+              "valid": true
+            }
+          ],
+          "type": "Transform",
+          "messages": []
+        }
+      ],
+      "nickname": "Move",
+      "messages": [],
+      "name": "Move"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000052",
+      "selected": false,
+      "type": "MathComponents.DomainComponents.Component_RemapNumbers",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000000c",
+              "owner": "00000000-0000-4000-8000-00000000000c",
+              "count": 500,
+              "type": "Value",
+              "name": "Graph Mapper"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000069",
+          "persistentCount": 0,
+          "nickname": "Value",
+          "count": 500,
+          "name": "Value",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Domain"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000043",
+          "persistentCount": 1,
+          "nickname": "Source",
+          "count": 1,
+          "name": "Source",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": true
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Domain"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000001f",
+              "owner": "00000000-0000-4000-8000-00000000007a",
+              "count": 1,
+              "type": "Domain",
+              "name": "Domain"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000001a",
+          "persistentCount": 1,
+          "nickname": "Target",
+          "count": 1,
+          "name": "Target",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": true
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000006e",
+          "persistentCount": 0,
+          "nickname": "Mapped",
+          "count": 500,
+          "name": "Mapped",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000001e",
+          "persistentCount": 0,
+          "nickname": "Clipped",
+          "count": 500,
+          "name": "Clipped",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Remap Numbers",
+      "messages": [],
+      "name": "Remap Numbers"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000073",
+      "selected": false,
+      "type": "CurveComponents.Component_LineSDL",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000034",
+              "owner": "00000000-0000-4000-8000-000000000007",
+              "count": 1,
+              "type": "Point",
+              "name": "Point"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000030",
+          "persistentCount": 0,
+          "nickname": "Start",
+          "count": 1,
+          "name": "Start",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Vector"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000003f",
+              "owner": "00000000-0000-4000-8000-000000000028",
+              "count": 1,
+              "type": "Vector",
+              "name": "Unit vector"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000036",
+          "persistentCount": 1,
+          "nickname": "Direction",
+          "count": 1,
+          "name": "Direction",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000074",
+              "owner": "00000000-0000-4000-8000-000000000074",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000001c",
+          "persistentCount": 1,
+          "nickname": "Length",
+          "count": 1,
+          "name": "Length",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000062",
+          "persistentCount": 0,
+          "nickname": "Line",
+          "count": 1,
+          "name": "Line",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Line",
+              "valid": true
+            }
+          ],
+          "type": "Line",
+          "messages": []
+        }
+      ],
+      "nickname": "Line SDL",
+      "messages": [],
+      "name": "Line SDL"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000045",
+      "selected": false,
+      "type": "VectorComponents.VectorComponents.Component_UnitVectorY",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000023",
+              "owner": "00000000-0000-4000-8000-000000000010",
+              "count": 20,
+              "type": "Number",
+              "name": "Series"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000065",
+          "persistentCount": 1,
+          "nickname": "Factor",
+          "count": 20,
+          "name": "Factor",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000005b",
+          "persistentCount": 0,
+          "nickname": "Unit vector",
+          "count": 20,
+          "name": "Unit vector",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        }
+      ],
+      "nickname": "Unit Y",
+      "messages": [],
+      "name": "Unit Y"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000000c",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_GraphMapper",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000007e",
+              "owner": "00000000-0000-4000-8000-00000000000d",
+              "count": 500,
+              "type": "Number",
+              "name": "Mapped"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000000c",
+          "nickname": "Graph Mapper",
+          "count": 500,
+          "name": "Graph Mapper",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Value",
+          "messages": []
+        }
+      ],
+      "nickname": "Graph Mapper",
+      "messages": [],
+      "name": "Graph Mapper"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000007a",
+      "selected": false,
+      "type": "MathComponents.DomainComponents.Component_ConstructDomain",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000006",
+              "owner": "00000000-0000-4000-8000-000000000006",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000003e",
+          "persistentCount": 1,
+          "nickname": "Domain start",
+          "count": 1,
+          "name": "Domain start",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000001d",
+              "owner": "00000000-0000-4000-8000-00000000001d",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000041",
+          "persistentCount": 1,
+          "nickname": "Domain end",
+          "count": 1,
+          "name": "Domain end",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000001f",
+          "persistentCount": 0,
+          "nickname": "Domain",
+          "count": 1,
+          "name": "Domain",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": true
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        }
+      ],
+      "nickname": "Construct Domain",
+      "messages": [],
+      "name": "Construct Domain"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000007",
+      "selected": false,
+      "type": "VectorComponents.PointComponents.Component_ConstructPoint",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000002d",
+          "persistentCount": 1,
+          "nickname": "X coordinate",
+          "count": 1,
+          "name": "X coordinate",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000071",
+          "persistentCount": 1,
+          "nickname": "Y coordinate",
+          "count": 1,
+          "name": "Y coordinate",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000087",
+          "persistentCount": 1,
+          "nickname": "Z coordinate",
+          "count": 1,
+          "name": "Z coordinate",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000034",
+          "persistentCount": 0,
+          "nickname": "Point",
+          "count": 1,
+          "name": "Point",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        }
+      ],
+      "nickname": "Construct Point",
+      "messages": [],
+      "name": "Construct Point"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000028",
+      "selected": false,
+      "type": "VectorComponents.VectorComponents.Component_UnitVectorX",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000015",
+          "persistentCount": 1,
+          "nickname": "Factor",
+          "count": 1,
+          "name": "Factor",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000003f",
+          "persistentCount": 0,
+          "nickname": "Unit vector",
+          "count": 1,
+          "name": "Unit vector",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Vector",
+              "valid": true
+            }
+          ],
+          "type": "Vector",
+          "messages": []
+        }
+      ],
+      "nickname": "Unit X",
+      "messages": [],
+      "name": "Unit X"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000074",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000074",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000010",
+      "selected": false,
+      "type": "MathComponents.FunctionComponents.Component_Series",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000005a",
+          "persistentCount": 1,
+          "nickname": "Start",
+          "count": 1,
+          "name": "Start",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Number"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000021",
+              "owner": "00000000-0000-4000-8000-000000000021",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000018",
+          "persistentCount": 1,
+          "nickname": "Step",
+          "count": 1,
+          "name": "Step",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Integer"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000000a",
+              "owner": "00000000-0000-4000-8000-00000000000a",
+              "count": 1,
+              "type": "Number",
+              "name": "Number Slider"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000005c",
+          "persistentCount": 1,
+          "nickname": "Count",
+          "count": 1,
+          "name": "Count",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Integer",
+              "valid": true
+            }
+          ],
+          "type": "Integer",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000023",
+          "persistentCount": 0,
+          "nickname": "Series",
+          "count": 20,
+          "name": "Series",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Series",
+      "messages": [],
+      "name": "Series"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000000d",
+      "selected": false,
+      "type": "MathComponents.DomainComponents.Component_RemapNumbers",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000040",
+              "owner": "00000000-0000-4000-8000-000000000075",
+              "count": 500,
+              "type": "Number",
+              "name": "Distance"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000003",
+          "persistentCount": 0,
+          "nickname": "Value",
+          "count": 500,
+          "name": "Value",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Domain"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000032",
+              "owner": "00000000-0000-4000-8000-000000000004",
+              "count": 1,
+              "type": "Domain",
+              "name": "Domain"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000003a",
+          "persistentCount": 1,
+          "nickname": "Source",
+          "count": 1,
+          "name": "Source",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": false
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        },
+        {
+          "persistent": [
+            {
+              "null": false,
+              "type": "Domain"
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000031",
+          "persistentCount": 1,
+          "nickname": "Target",
+          "count": 1,
+          "name": "Target",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": true
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000007e",
+          "persistentCount": 0,
+          "nickname": "Mapped",
+          "count": 500,
+          "name": "Mapped",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000048",
+          "persistentCount": 0,
+          "nickname": "Clipped",
+          "count": 500,
+          "name": "Clipped",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Remap Numbers",
+      "messages": [],
+      "name": "Remap Numbers"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000006",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000006",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000001d",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000001d",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000021",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000021",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000000a",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Special.GH_NumberSlider",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000000a",
+          "nickname": "Number Slider",
+          "count": 1,
+          "name": "Number Slider",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Number",
+              "valid": true
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        }
+      ],
+      "nickname": "Number Slider",
+      "messages": [],
+      "name": "Number Slider"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000075",
+      "selected": false,
+      "type": "VectorComponents.PointComponents.Component_PullPoint",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000076",
+              "owner": "00000000-0000-4000-8000-000000000027",
+              "count": 500,
+              "type": "Point",
+              "name": "Points"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000002e",
+          "persistentCount": 0,
+          "nickname": "Point",
+          "count": 500,
+          "name": "Point",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            },
+            {
+              "null": false,
+              "type": "Point",
+              "valid": true
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000004e",
+              "owner": "00000000-0000-4000-8000-00000000004e",
+              "count": 2,
+              "type": "Curve",
+              "name": "Curve"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-000000000078",
+          "persistentCount": 0,
+          "nickname": "Geometry",
+          "count": 2,
+          "name": "Geometry",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Geometry",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000059",
+          "persistentCount": 0,
+          "nickname": "Closest Point",
+          "count": 500,
+          "name": "Closest Point",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Point",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000040",
+          "persistentCount": 0,
+          "nickname": "Distance",
+          "count": 500,
+          "name": "Distance",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000066",
+          "persistentCount": 0,
+          "nickname": "Index",
+          "count": 500,
+          "name": "Index",
+          "direction": "output",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Integer",
+          "messages": []
+        }
+      ],
+      "nickname": "Pull Point",
+      "messages": [],
+      "name": "Pull Point"
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "selected": false,
+      "type": "MathComponents.DomainComponents.Component_NumericBounds",
+      "ports": [
+        {
+          "persistent": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000040",
+              "owner": "00000000-0000-4000-8000-000000000075",
+              "count": 500,
+              "type": "Number",
+              "name": "Distance"
+            }
+          ],
+          "id": "00000000-0000-4000-8000-00000000004f",
+          "persistentCount": 0,
+          "nickname": "Numbers",
+          "count": 500,
+          "name": "Numbers",
+          "direction": "input",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Number",
+          "messages": []
+        },
+        {
+          "persistent": [],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-000000000032",
+          "persistentCount": 0,
+          "nickname": "Domain",
+          "count": 1,
+          "name": "Domain",
+          "direction": "output",
+          "phase": "Collected",
+          "optional": false,
+          "sample": [
+            {
+              "null": false,
+              "type": "Domain",
+              "valid": false
+            }
+          ],
+          "type": "Domain",
+          "messages": []
+        }
+      ],
+      "nickname": "Bounds",
+      "messages": [],
+      "name": "Bounds"
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000004e",
+      "selected": false,
+      "type": "Grasshopper.Kernel.Parameters.Param_Curve",
+      "ports": [
+        {
+          "persistent": [
+            {
+              "found": false,
+              "referenceId": "00000000-0000-4000-8000-000000000057",
+              "null": false,
+              "type": "Curve",
+              "loaded": false,
+              "referenced": true
+            },
+            {
+              "found": false,
+              "referenceId": "00000000-0000-4000-8000-000000000070",
+              "null": false,
+              "type": "Curve",
+              "loaded": false,
+              "referenced": true
+            }
+          ],
+          "sources": [],
+          "id": "00000000-0000-4000-8000-00000000004e",
+          "persistentCount": 2,
+          "nickname": "Curve",
+          "count": 2,
+          "name": "Curve",
+          "direction": "floating",
+          "phase": "Computed",
+          "optional": false,
+          "sample": [
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            },
+            {
+              "null": true,
+              "type": null,
+              "valid": null
+            }
+          ],
+          "type": "Curve",
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "A referenced Curve could not be found in the Rhino document."
+            }
+          ]
+        }
+      ],
+      "nickname": "Curve",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "A referenced Curve could not be found in the Rhino document."
+        }
+      ],
+      "name": "Curve"
+    }
+  ]
+}

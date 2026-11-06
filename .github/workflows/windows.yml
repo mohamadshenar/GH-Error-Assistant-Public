@@ -1,0 +1,42 @@
+name: Windows build
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Restore pinned SDK references
+        run: dotnet restore GHErrorAssistant.sln -p:RhinoSdkPath=
+      - name: Compile
+        run: dotnet build GHErrorAssistant.sln -c Release --no-restore -p:RhinoSdkPath=
+      - name: Test offline engine
+        run: dotnet test tests/GHErrorAssistant.Tests -c Release --no-build --logger trx --results-directory TestResults
+      - name: Test native evidence comparison tools
+        run: python -m unittest discover -s tests/NativeStage2 -p 'test_*.py' -v
+      - name: Package
+        run: ./tests/Packaging/Privacy.Tests.ps1
+      - name: Build allowlisted candidate package
+        run: ./build-package.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GHErrorAssistant-3.1.0-rc.1-windows
+          path: artifacts/GHErrorAssistant-3.1.0-rc.1-windows.zip
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: TestResults/*.trx

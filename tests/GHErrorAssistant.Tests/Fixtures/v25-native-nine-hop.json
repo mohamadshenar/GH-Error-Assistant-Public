@@ -1,0 +1,481 @@
+{
+  "provenance": "Sanitized scalar regression replay; synthetic identities, no geometry or original document identifiers.",
+  "rootId": "00000000-0000-4000-8000-000000000086",
+  "curveId": "00000000-0000-4000-8000-000000000022",
+  "objects": [
+    {
+      "id": "00000000-0000-4000-8000-000000000022",
+      "name": "Curve",
+      "type": "Grasshopper.Kernel.Parameters.Param_Curve",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "A referenced Curve could not be found in the Rhino document."
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000022",
+          "name": "Curve",
+          "type": "Curve",
+          "count": 7,
+          "persistentCount": 7,
+          "nullCount": 7,
+          "missingSavedReferences": 7,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "A referenced Curve could not be found in the Rhino document."
+            }
+          ],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000003d",
+      "name": "Divide Surface",
+      "type": "VectorComponents.DivisionComponents.Component_DivideSurface",
+      "messages": [],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000049",
+          "name": "Surface",
+          "type": "Surface",
+          "count": 7,
+          "persistentCount": 0,
+          "nullCount": 7,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000022",
+              "owner": "00000000-0000-4000-8000-000000000022",
+              "name": "Curve"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000013",
+          "name": "U Count",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000007f",
+          "name": "V Count",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000053",
+      "name": "Trim Tree",
+      "type": "Grasshopper.Kernel.Components.GH_TrimTreeComponent",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "Input parameter Tree failed to collect data"
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000082",
+          "name": "Tree",
+          "type": "Generic Data",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "Input parameter Tree failed to collect data"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000055",
+              "owner": "00000000-0000-4000-8000-00000000003d",
+              "name": "Points"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000038",
+          "name": "Depth",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000042",
+      "name": "Mesh FromPoints",
+      "type": "MeshEdit.GH_Component_MeshFromPoints",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "Input parameter Points failed to collect data"
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-00000000002c",
+          "name": "Points",
+          "type": "Point",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "Input parameter Points failed to collect data"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000002b",
+              "owner": "00000000-0000-4000-8000-000000000053",
+              "name": "Tree"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000035",
+          "name": "U direction",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "name": "V direction",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000060",
+          "name": "Colour",
+          "type": "Colour",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000020",
+      "name": "Mesh Join",
+      "type": "SurfaceComponents.MeshComponents.Component_MeshJoin",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "Input parameter Meshes failed to collect data"
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "name": "Meshes",
+          "type": "Mesh",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "Input parameter Meshes failed to collect data"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000085",
+              "owner": "00000000-0000-4000-8000-000000000042",
+              "name": "Mesh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000006c",
+      "name": "Mesh WeldVertices",
+      "type": "MeshEdit.GH_Component_Weld",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "Input parameter Mesh failed to collect data"
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000064",
+          "name": "Mesh",
+          "type": "Mesh",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "Input parameter Mesh failed to collect data"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000005d",
+              "owner": "00000000-0000-4000-8000-000000000020",
+              "name": "Mesh"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000063",
+          "name": "tolerance",
+          "type": "Number",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000044",
+      "name": "Weaverbird's Catmull-Clark Subdivision",
+      "type": "WeaverbirdBeakCommon.SubD.CatmullClarkComponent",
+      "messages": [
+        {
+          "severity": "Warning",
+          "message": "Input parameter Mesh/Curves failed to collect data"
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-00000000006f",
+          "name": "Mesh/Curves",
+          "type": "Geometry",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [
+            {
+              "severity": "Warning",
+              "message": "Input parameter Mesh/Curves failed to collect data"
+            }
+          ],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000002a",
+              "owner": "00000000-0000-4000-8000-00000000006c",
+              "name": "Mesh"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000054",
+          "name": "Level",
+          "type": "Integer",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000011",
+          "name": "Smooth Naked Edges",
+          "type": "NakedEdgeEnum",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000086",
+      "name": "Solver",
+      "type": "Kangaroo2Component.KangarooGH3",
+      "messages": [
+        {
+          "severity": "Error",
+          "message": "Solution exception:Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection."
+        }
+      ],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-00000000001b",
+          "name": "GoalObjects",
+          "type": "Generic Data",
+          "count": 2,
+          "persistentCount": 0,
+          "nullCount": 2,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000033",
+              "owner": "00000000-0000-4000-8000-000000000019",
+              "name": "Result"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000025",
+          "name": "Reset",
+          "type": "Boolean",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-00000000002f",
+          "name": "Threshold",
+          "type": "Number",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000080",
+          "name": "Tolerance",
+          "type": "Number",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "name": "On",
+          "type": "Boolean",
+          "count": 1,
+          "persistentCount": 1,
+          "nullCount": 0,
+          "missingSavedReferences": 1,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000019",
+      "name": "Entwine",
+      "type": "MathComponents.MergeComponents.Component_Entwine",
+      "messages": [],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000050",
+          "name": "Branch {0;0}",
+          "type": "Generic Data",
+          "count": 1,
+          "persistentCount": 0,
+          "nullCount": 1,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-00000000007c",
+              "owner": "00000000-0000-4000-8000-00000000003c",
+              "name": "G"
+            }
+          ]
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000056",
+          "name": "Branch {0;1}",
+          "type": "Generic Data",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": []
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000017",
+          "name": "Branch {0;2}",
+          "type": "Generic Data",
+          "count": 1,
+          "persistentCount": 0,
+          "nullCount": 1,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "id": "00000000-0000-4000-8000-00000000003c",
+      "name": "Show",
+      "type": "Kangaroo2Component.GoalComponents.GeometryComponent",
+      "messages": [],
+      "inputs": [
+        {
+          "id": "00000000-0000-4000-8000-000000000012",
+          "name": "G",
+          "type": "Generic Data",
+          "count": 0,
+          "persistentCount": 0,
+          "nullCount": 0,
+          "missingSavedReferences": 0,
+          "messages": [],
+          "sources": [
+            {
+              "port": "00000000-0000-4000-8000-000000000047",
+              "owner": "00000000-0000-4000-8000-000000000044",
+              "name": "Output Mesh/Curves"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

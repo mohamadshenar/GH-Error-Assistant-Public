@@ -1,0 +1,15 @@
+name: gh-error-assistant
+version: 3.1.0-rc.1
+authors:
+  - GH Error Assistant contributors
+description: Offline Grasshopper 1 troubleshooting for Rhino 9 on Windows. Release candidate; Windows Rhino 9 / Grasshopper 1 only. Higher DPI and full dark appearance remain unverified.
+icon: docs/branding/logo.png
+url: https://github.com/mohamadshenar/GH-Error-Assistant-Public
+keywords:
+  - grasshopper
+  - troubleshooting
+  - offline
+
+
+
+

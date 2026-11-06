@@ -1,0 +1,2 @@
+rootId	inputId	sourceOwnerId	sourcePortId	sourceInputId	sourceType	receiverType	count	assignmentKnown	hasAssignedData	sourcesInspected	warningBase64
+00000000-0000-4000-8000-000000000084	00000000-0000-4000-8000-000000000084	00000000-0000-4000-8000-00000000007d	00000000-0000-4000-8000-00000000007d	00000000-0000-4000-8000-00000000007d	Point	Mesh	0	True	False	True	RmxvYXRpbmcgcGFyYW1ldGVyIFB0IGZhaWxlZCB0byBjb2xsZWN0IGRhdGE=
