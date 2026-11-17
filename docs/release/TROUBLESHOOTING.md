@@ -1,13 +1,11 @@
-# Troubleshooting and recovery
+# Troubleshooting
 
-**Plugin missing:** verify the GHA is in the Components Folder, restart Rhino and check for duplicate manual/Yak installations. Read load errors. Do not install SDK DLLs or disable unrelated plugins.
+**Package missing:** use Rhino 9 PackageManager. Stable 3.1.0 appears only after publication; RC1 requires Include pre-releases. Rhino 8 is not supported.
 
-**Locate does not move:** return to the original document and wait for its solution. The target must still exist. Locate Error and Locate Source refer to different identities. Busy/inactive canvases and cluster boundaries can prevent navigation.
+**Menu missing:** restart after installation, then open Grasshopper 1. Check version/runtime and loader messages. Identify duplicate manual/Yak copies before removing only a known duplicate with Rhino closed. Leave vendor DLLs and unknown files untouched.
 
-**Check Again requests a solution:** make your intended change, recompute yourself and retry. Back to Diagnosis shows saved findings; Back to Results returns to current results.
+**Current inspection unavailable:** allow a deliberate new solution on the original document, then Check Again. Back retains historical findings. Wrong-document/deleted-object guards intentionally refuse unsafe navigation.
 
-**A new warning remains:** investigate that current message explicitly. Repairing a reference may leave an independent Solver error. Do not replace unrelated geometry just to clear warnings.
+**Source is not the cause:** connectivity is not causality. Review alternatives and limits, repair intended data manually and check actual output.
 
-**Missing geometry:** open the intended Rhino file and inspect the parameter holding the reference. Reassign only deliberately; absence here does not prove deletion.
-
-**Restore/remove:** save work, close every Rhino process, move only this GHA outside discovery paths and restore a verified backup if needed. Check its hash and reopen Rhino. Preserve definitions and other plugins. When seeking help, supply exact version/hash, original error and a minimal disposable reproduction; review copied evidence for private details.
+**Layout/stability issue:** record plugin/Rhino/runtime versions, scaling, appearance and reproduction steps. Preserve available diagnostics and remove private data before posting at https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues . Use a verified rollback for serious regressions. Never replace a loaded GHA or disable unrelated plugins to conceal a problem.

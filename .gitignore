@@ -5,3 +5,7 @@
 *.suo
 *.gha
 *.yak
+artifacts/
+TestResults/
+**/TestResults/
+**/__pycache__/

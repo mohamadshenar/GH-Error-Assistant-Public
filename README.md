@@ -1,21 +1,41 @@
-# GH Error Assistant 3.1 RC1
+# GH Error Assistant 3.1.0
 
-Offline troubleshooting for Windows / Rhino 9 / Grasshopper 1. No other host/platform support is advertised.
+Offline troubleshooting for Grasshopper 1. Understand warnings, inspect connected upstream evidence, and navigate to the objects worth checking. A connected candidate is a possible source, not a proven cause.
 
-Select a warning, open Error Assistant from the Grasshopper menu or Error Help launcher, and choose Investigate. Locate Error frames the reporter; Locate Source frames the selected possible upstream source. A connection does not establish causality. Repair manually, recompute, and use Check Again. Back displays explicitly historical findings. Advanced details and Copy preserve original messages. No telemetry, uploads, AI services or automatic repairs.
+**Supported scope:** Windows, Rhino 9 with its default .NET 10 runtime, Grasshopper 1. Rhino 8, Grasshopper 2, macOS, Rhino.Inside and alternate runtimes are not qualified.
 
-## Installation and rollback
-Close Rhino. Preserve your current GHA outside discovery. Extract the Windows ZIP, unblock through Properties if required, and copy only GHErrorAssistant.gha into the Components Folder opened by Grasshopper File > Special Folders. Restart Rhino. Do not combine Yak and manual copies. For manual uninstall, close Rhino and remove only that GHA; restore your verified backup. For Yak use PackageManager uninstall first.
+This stable distribution is prepared for publication. The existing public release is 3.1.0-rc.1 until a separately approved 3.1.0 publication completes. Do not substitute an RC1 download when verifying a 3.1.0 checksum.
+
+## Install or upgrade
+
+Once 3.1.0 is listed, run **PackageManager** in Rhino 9, search **gh-error-assistant**, select **3.1.0**, install and restart Rhino. Stable versions do not require **Include pre-releases**; RC1 does. If only RC1 appears, stable publication has not completed or the host is not compatible.
+
+Use one installation method. Preserve the previous package or GHA and its checksum outside plugin discovery before upgrading. Do not combine a manual copy with a Yak installation. See [installation and rollback](INSTALLATION.md).
+
+The GitHub Windows ZIP is an alternative manual installation. Verify SHA256SUMS.txt, close Rhino, extract it, and copy only GHErrorAssistant.gha into the Components Folder opened by Grasshopper **File → Special Folders → Components Folder**. Never overwrite a loaded assembly or remove unrelated plugins.
+
+## Use
+
+1. Open Grasshopper and **Error Assistant → Open assistant**, or use the Error Help launcher in Params → Util.
+2. Select the reporting object, choose its warning/error and click **Investigate**.
+3. Read the observation and manual repair. **Locate Error** frames the reporter; **Locate Source** frames the selected possible upstream source.
+4. Repair the definition yourself and deliberately recompute. **Check Again** refreshes the inspection; **Back to Diagnosis** retains navigation and explicitly historical findings.
+5. Check the intended output independently. A disappearing warning does not prove that result is correct.
+
+Advanced details retain evidence, alternatives, limits and original messages. Copy reports may contain definition names and object IDs: review them before sharing.
+
+![Actual Rhino-hosted 3.1.0 replacement-error verification](docs/release/diagnosis.jpg)
 
 ## Evidence and limitations
-The implementation passed native Number/Curve repair, navigation and a measured 302-second session. Actual 125% / 120 DPI was measured. Complete minimum-size 125%, 150%, 200% and full dark appearance remain unverified. This new RC changes caption, version and support metadata and requires a targeted native smoke test before publication. Warning disappearance is not proof of intended output.
 
-## License and support
-MIT covers project code and original branding. Rhino and Grasshopper are registered trademarks of Robert McNeel & Associates; contextual host UI is not relicensed under MIT. This plugin is not endorsed by McNeel. Rhino is separately licensed. No vendor DLLs are bundled.
-Proposed support, not live until authorized creation: https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues .
+The exact native-tested 3.1.0 GHA passed bounded Rhino 9/.NET 10 testing of missing data, two connected upstream branches, navigation, API-driven arithmetic repair with independent output 4, replacement errors, normal window lifecycle and fresh startup. The assistant did not independently certify intended output. Supported fingerprints showed only intended Locate selection/view changes; coverage was incomplete and supplemented for the slider.
 
-## Build
-Use Windows and global.json SDK. Run dotnet restore GHErrorAssistant.sln -p:RhinoSdkPath=, then dotnet build GHErrorAssistant.sln -c Release -p:RhinoSdkPath= -p:SourceRevisionId=17dc55a45270b0c25ec197b1d66da291f20a98fa and dotnet test GHErrorAssistant.sln -c Release --no-build. Repeatable recipe only; no bit-for-bit reproducibility claim.
+150%/200% DPI, full dark appearance, pristine clean-profile installation and complete exception-log coverage remain unverified. Earlier 125% evidence does not establish every minimum-size state. No universal crash-free, leak-free, root-cause or repair guarantee is made. See [limitations](docs/release/LIMITATIONS.md).
 
-![Actual Rhino-hosted implementation UI](docs/release/diagnosis.jpg)
-Screenshot is the accepted implementation build, not renewed native acceptance of this RC.
+## Privacy, support and license
+
+No telemetry, AI services or diagnostic uploads. Repairs, recomputation and saving remain under your control; Locate intentionally changes selection/view. See [privacy](PRIVACY.md).
+
+Support: [GitHub issues](https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues). Include versions and reproduction steps with private data removed. MIT covers project contributions and original branding; Rhino is separately licensed. No vendor DLLs are bundled. See [notices](THIRD-PARTY-NOTICES.md). This project is not endorsed by McNeel.
+
+See [repeatable builds](BUILDING.md). Building is not a promise of byte-identical reproduction or native acceptance of the result.

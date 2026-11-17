@@ -1,21 +1,21 @@
-# GH Error Assistant 3.1 RC1
+# Repeatable Windows build
 
-Offline troubleshooting for Windows / Rhino 9 / Grasshopper 1. No other host/platform support is advertised.
+Use PowerShell 7 and SDK 10.0.401 from global.json. Plugin: net10.0-windows. Offline tests: net10.0. Pinned RhinoCommon/Grasshopper compile references: 8.19.25132.1001; these do not qualify Rhino 8. Host SDK/runtime DLLs are not redistributed.
 
-Select a warning, open Error Assistant from the Grasshopper menu or Error Help launcher, and choose Investigate. Locate Error frames the reporter; Locate Source frames the selected possible upstream source. A connection does not establish causality. Repair manually, recompute, and use Check Again. Back displays explicitly historical findings. Advanced details and Copy preserve original messages. No telemetry, uploads, AI services or automatic repairs.
+This export contains approved production source, sanitized scalar fixtures and public documentation, without private Git history. Its future public commit differs from the private build revision. Use the public commit for new builds. The recorded distributed-binary revision is not a promise of bit-for-bit reproduction from the export.
 
-## Installation and rollback
-Close Rhino. Preserve your current GHA outside discovery. Extract the Windows ZIP, unblock through Properties if required, and copy only GHErrorAssistant.gha into the Components Folder opened by Grasshopper File > Special Folders. Restart Rhino. Do not combine Yak and manual copies. For manual uninstall, close Rhino and remove only that GHA; restore your verified backup. For Yak use PackageManager uninstall first.
+```powershell
+$revision = git rev-parse HEAD
+dotnet restore GHErrorAssistant.sln -p:RhinoSdkPath=
+dotnet build GHErrorAssistant.sln -c Release --no-restore -p:RhinoSdkPath= -p:SourceRevisionId=$revision
+dotnet test tests/GHErrorAssistant.Tests -c Release --no-build
+python -m unittest discover -s tests/NativeStage2 -p 'test_*.py' -v
+./tests/Packaging/Privacy.Tests.ps1
+./tests/Packaging/Candidate.Tests.ps1
+./build-package.ps1 -SourceCommit $revision
+./tests/Packaging/Archive.Tests.ps1
+# Optional local packaging with an existing Rhino 9 Yak CLI:
+./build-yak.ps1
+```
 
-## Evidence and limitations
-The implementation passed native Number/Curve repair, navigation and a measured 302-second session. Actual 125% / 120 DPI was measured. Complete minimum-size 125%, 150%, 200% and full dark appearance remain unverified. This new RC changes caption, version and support metadata and requires a targeted native smoke test before publication. Warning disappearance is not proof of intended output.
-
-## License and support
-MIT covers project code and original branding. Rhino and Grasshopper are registered trademarks of Robert McNeel & Associates; contextual host UI is not relicensed under MIT. This plugin is not endorsed by McNeel. Rhino is separately licensed. No vendor DLLs are bundled.
-Proposed support, not live until authorized creation: https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues .
-
-## Build
-Use Windows and global.json SDK. Run dotnet restore GHErrorAssistant.sln -p:RhinoSdkPath=, then dotnet build GHErrorAssistant.sln -c Release -p:RhinoSdkPath= -p:SourceRevisionId=17dc55a45270b0c25ec197b1d66da291f20a98fa and dotnet test GHErrorAssistant.sln -c Release --no-build. Repeatable recipe only; no bit-for-bit reproducibility claim.
-
-![Actual Rhino-hosted implementation UI](docs/release/diagnosis.jpg)
-Screenshot is the accepted implementation build, not renewed native acceptance of this RC.
+Packaging neither installs nor publishes. Yak infers the older SDK API baseline; build-yak.ps1 narrows the newly generated .NET 10 package to rh9_0-win and recomputes normalized-manifest checksums. Never distribute inferred Rhino 8 staging packages. New binaries require appropriate testing; automated builds do not establish native acceptance.

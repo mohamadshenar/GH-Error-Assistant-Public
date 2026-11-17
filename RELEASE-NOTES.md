@@ -1,21 +1,16 @@
-# GH Error Assistant 3.1 RC1
+# GH Error Assistant 3.1.0
 
-Offline troubleshooting for Windows / Rhino 9 / Grasshopper 1. No other host/platform support is advertised.
+Prepared stable release for Windows / Rhino 9 / default .NET 10 / Grasshopper 1. Publication awaits separate authorization; public RC1 remains intact.
 
-Select a warning, open Error Assistant from the Grasshopper menu or Error Help launcher, and choose Investigate. Locate Error frames the reporter; Locate Source frames the selected possible upstream source. A connection does not establish causality. Repair manually, recompute, and use Check Again. Back displays explicitly historical findings. Advanced details and Copy preserve original messages. No telemetry, uploads, AI services or automatic repairs.
+- Compact diagnosis, readable wrapping and optional technical evidence.
+- Original warnings retained; bounded multi-branch upstream inspection. Connected candidates are not proven causes.
+- Locate Error, Locate Source, Back and Check Again with explicit current/historical status.
+- Replacement-error guidance when the original warning clears but another error remains.
+- Manual repair and independent-output reminders. No automatic edits, solutions, geometry changes or telemetry.
+- Consistent stable metadata and native .NET 10 Windows targeting. Diagnostic algorithms are unchanged from RC1.
 
-## Installation and rollback
-Close Rhino. Preserve your current GHA outside discovery. Extract the Windows ZIP, unblock through Properties if required, and copy only GHErrorAssistant.gha into the Components Folder opened by Grasshopper File > Special Folders. Restart Rhino. Do not combine Yak and manual copies. For manual uninstall, close Rhino and remove only that GHA; restore your verified backup. For Yak use PackageManager uninstall first.
+Exact-binary acceptance covered Rhino 9.0.26300.9401 / GH 1.0.0009 / .NET 10.0.12. API-driven disposable arithmetic repair independently produced 2 + 2 = 4; production navigation/refresh controls were exercised. This is direct-upgrade evidence, not pristine clean-install acceptance.
 
-## Evidence and limitations
-The implementation passed native Number/Curve repair, navigation and a measured 302-second session. Actual 125% / 120 DPI was measured. Complete minimum-size 125%, 150%, 200% and full dark appearance remain unverified. This new RC changes caption, version and support metadata and requires a targeted native smoke test before publication. Warning disappearance is not proof of intended output.
+**Unverified:** 150%/200% DPI, full dark appearance, complete exception-log coverage and pristine first-time installation. Earlier 125% observations do not certify every state. Inspection is bounded; no universal crash-free/causal guarantee. Rhino 8, GH2, macOS and Rhino.Inside are not qualified.
 
-## License and support
-MIT covers project code and original branding. Rhino and Grasshopper are registered trademarks of Robert McNeel & Associates; contextual host UI is not relicensed under MIT. This plugin is not endorsed by McNeel. Rhino is separately licensed. No vendor DLLs are bundled.
-Proposed support, not live until authorized creation: https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues .
-
-## Build
-Use Windows and global.json SDK. Run dotnet restore GHErrorAssistant.sln -p:RhinoSdkPath=, then dotnet build GHErrorAssistant.sln -c Release -p:RhinoSdkPath= -p:SourceRevisionId=17dc55a45270b0c25ec197b1d66da291f20a98fa and dotnet test GHErrorAssistant.sln -c Release --no-build. Repeatable recipe only; no bit-for-bit reproducibility claim.
-
-![Actual Rhino-hosted implementation UI](docs/release/diagnosis.jpg)
-Screenshot is the accepted implementation build, not renewed native acceptance of this RC.
+See [installation/rollback](INSTALLATION.md), [limitations](docs/release/LIMITATIONS.md), [troubleshooting](docs/release/TROUBLESHOOTING.md) and [support](https://github.com/mohamadshenar/GH-Error-Assistant-Public/issues).

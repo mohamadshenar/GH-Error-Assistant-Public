@@ -1,18 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>latest</LangVersion>
     <AssemblyName>GHErrorAssistant</AssemblyName>
-    <Version>3.1.0-rc.1</Version>
+    <Version>3.1.0</Version>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
+    <FileVersion>3.1.0.0</FileVersion>
     <Deterministic>true</Deterministic>
     <PathMap>$(MSBuildProjectDirectory)=/_/GHErrorAssistant</PathMap>
     <RhinoSdkPath Condition="'$(RhinoSdkPath)' == '' and Exists('C:\Program Files\Rhino 8\System\RhinoCommon.dll')">C:\Program Files\Rhino 8</RhinoSdkPath>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="all" />
-  </ItemGroup>
   <ItemGroup Condition="'$(RhinoSdkPath)' != ''">
     <Reference Include="Rhino.UI"><HintPath>$(RhinoSdkPath)\System\Rhino.UI.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="RhinoCommon"><HintPath>$(RhinoSdkPath)\System\RhinoCommon.dll</HintPath><Private>false</Private></Reference>

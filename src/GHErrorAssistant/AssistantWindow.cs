@@ -72,7 +72,7 @@ namespace GHErrorAssistant
         }
         private AssistantWindow()
         {
-            Title = "GH Error Assistant · 3.1 RC1";
+            Title = "GH Error Assistant · 3.1";
             ClientSize = new Size(UiLayoutPolicy.DefaultWidth, UiLayoutPolicy.DefaultHeight);
             MinimumSize = new Size(UiLayoutPolicy.MinimumWidth, UiLayoutPolicy.MinimumHeight);
             Padding = new Padding(UiLayoutPolicy.Inset);
